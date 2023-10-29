@@ -3119,7 +3119,7 @@ static int __init it87_find(int sioaddr, unsigned short *address,
 	case 0xffff:	/* No device at all */
 		goto exit;
 	default:
-		pr_debug("Unsupported chip (DEVID=0x%x)\n", chip_type);
+		pr_info("Unsupported chip (DEVID=0x%x)\n", chip_type);
 		goto exit;
 	}
 
